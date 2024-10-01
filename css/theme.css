@@ -1,0 +1,66 @@
+:root {
+    /* Custom color palette from Coolors */
+    --background: #32161f; /* Ciemny burgund */
+    --foreground: #a8f9ff; /* Bardzo jasny błękit */
+
+    --card: #9ae5e6; /* Jasny błękitno-zielony */
+    --card-foreground: #32161f; /* Ciemny burgund */
+
+    --popover: #9ae5e6; /* Jasny błękitno-zielony */
+    --popover-foreground: #32161f; /* Ciemny burgund */
+
+    --primary: #775b59; /* Brązowy */
+    --primary-foreground: #a8f9ff; /* Bardzo jasny błękit */
+
+    --secondary: #81a094; /* Szaro-zielony */
+    --secondary-foreground: #32161f; /* Ciemny burgund */
+
+    --muted: #775b59; /* Brązowy */
+    --muted-foreground: #a8f9ff; /* Bardzo jasny błękit */
+
+    --accent: #9ae5e6; /* Jasny błękitno-zielony */
+    --accent-foreground: #32161f; /* Ciemny burgund */
+
+    --destructive: #32161f; /* Ciemny burgund */
+    --destructive-foreground: #a8f9ff; /* Bardzo jasny błękit */
+
+    --border: #81a094; /* Szaro-zielony */
+    --input: #9ae5e6; /* Jasny błękitno-zielony */
+    --ring: #32161f; /* Ciemny burgund */
+}
+
+/* Combinations */
+.card {
+    background-color: var(--card);
+    color: var(--card-foreground);
+}
+
+.popover {
+    background-color: var(--popover);
+    color: var(--popover-foreground);
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.secondary {
+    background-color: var(--secondary);
+    color: var(--secondary-foreground);
+}
+
+.muted {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+}
+
+.accent {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.destructive {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
+}
