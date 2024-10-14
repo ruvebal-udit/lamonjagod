@@ -29,38 +29,63 @@
     --ring: #32161f; /* Ciemny burgund */
 }
 
-/* Combinations */
-.card {
-    background-color: var(--card);
-    color: var(--card-foreground);
+body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+    height: 100vh;
 }
 
-.popover {
-    background-color: var(--popover);
-    color: var(--popover-foreground);
-}
-
-.primary {
+header {
+    grid-row: 1;
     background-color: var(--primary);
     color: var(--primary-foreground);
+    padding: 20px;
+    text-align: center;
+    border-radius: 62px;
 }
 
-.secondary {
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: var(--primary-foreground);
+    text-decoration: none;
+}
+
+main {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+main section {
+    background-color: var(--card);
+    color: var(--card-foreground);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+footer {
+    grid-row: 3;
     background-color: var(--secondary);
     color: var(--secondary-foreground);
-}
-
-.muted {
-    background-color: var(--muted);
-    color: var(--muted-foreground);
-}
-
-.accent {
-    background-color: var(--accent);
-    color: var(--accent-foreground);
-}
-
-.destructive {
-    background-color: var(--destructive);
-    color: var(--destructive-foreground);
+    text-align: center;
+    padding: 10px;
 }
