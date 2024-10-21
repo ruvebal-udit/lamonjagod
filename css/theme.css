@@ -1,91 +1,71 @@
 :root {
-    /* Custom color palette from Coolors */
-    --background: #32161f; /* Ciemny burgund */
-    --foreground: #a8f9ff; /* Bardzo jasny błękit */
+    /* Zaktualizowana paleta z Coolors */
+    --background: #a8f9ff; /* Jasny błękit jako główne tło */
+    --foreground: #32161f; /* Ciemny burgund dla głównego tekstu */
 
-    --card: #9ae5e6; /* Jasny błękitno-zielony */
-    --card-foreground: #32161f; /* Ciemny burgund */
+    --card: #9ae5e6; /* Jasny błękitno-zielony dla kart */
+    --card-foreground: #32161f; /* Ciemny burgund tekst na kartach */
 
-    --popover: #9ae5e6; /* Jasny błękitno-zielony */
-    --popover-foreground: #32161f; /* Ciemny burgund */
+    --popover: #81a094; /* Szaro-zielony dla popover */
+    --popover-foreground: #32161f; /* Ciemny burgund tekst na popoverach */
 
-    --primary: #775b59; /* Brązowy */
-    --primary-foreground: #a8f9ff; /* Bardzo jasny błękit */
+    --primary: #775b59; /* Brązowy dla głównych elementów */
+    --primary-foreground: #a8f9ff; /* Jasny błękit tekst na brązowym tle */
 
-    --secondary: #81a094; /* Szaro-zielony */
-    --secondary-foreground: #32161f; /* Ciemny burgund */
+    --secondary: #9ae5e6; /* Jasny błękitno-zielony dla elementów drugorzędnych */
+    --secondary-foreground: #32161f; /* Ciemny burgund dla tekstu drugorzędnego */
 
-    --muted: #775b59; /* Brązowy */
-    --muted-foreground: #a8f9ff; /* Bardzo jasny błękit */
+    --muted: #81a094; /* Szaro-zielony dla przytłumionych elementów */
+    --muted-foreground: #32161f; /* Ciemny burgund dla przytłumionego tekstu */
 
-    --accent: #9ae5e6; /* Jasny błękitno-zielony */
-    --accent-foreground: #32161f; /* Ciemny burgund */
+    --accent: #9ae5e6; /* Jasny błękitno-zielony dla wyróżniających się elementów */
+    --accent-foreground: #32161f; /* Ciemny burgund dla tekstu na akcencie */
 
-    --destructive: #32161f; /* Ciemny burgund */
-    --destructive-foreground: #a8f9ff; /* Bardzo jasny błękit */
+    --destructive: #32161f; /* Ciemny burgund dla destrukcyjnych akcji */
+    --destructive-foreground: #a8f9ff; /* Jasny błękit dla destrukcyjnego tekstu */
 
-    --border: #81a094; /* Szaro-zielony */
-    --input: #9ae5e6; /* Jasny błękitno-zielony */
-    --ring: #32161f; /* Ciemny burgund */
+    --border: #775b59; /* Brązowy dla obramowań */
+    --input: #9ae5e6; /* Jasny błękitno-zielony dla pól wejściowych */
+    --ring: #775b59; /* Brązowy dla pierścienia focus */
 }
 
+/* Zastosowanie kolorów do różnych elementów */
 body {
     background-color: var(--background);
     color: var(--foreground);
-    font-family: Arial, sans-serif;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr;
-    height: 100vh;
 }
 
-header {
-    grid-row: 1;
-    background-color: var(--primary);
-    color: var(--primary-foreground);
-    padding: 20px;
-    text-align: center;
-    border-radius: 62px;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: var(--primary-foreground);
-    text-decoration: none;
-}
-
-main {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    padding: 20px;
-    text-align: center;
-    
-}
-
-main section {
+.card {
     background-color: var(--card);
     color: var(--card-foreground);
-    padding: 20px;
-    border-radius: 8px;
 }
 
-footer {
-    grid-row: 3;
+.popover {
+    background-color: var(--popover);
+    color: var(--popover-foreground);
+}
+
+.primary {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
+.secondary {
     background-color: var(--secondary);
     color: var(--secondary-foreground);
-    text-align: center;
-    padding: 10px;
+}
+
+.muted {
+    background-color: var(--muted);
+    color: var(--muted-foreground);
+}
+
+.accent {
+    background-color: var(--accent);
+    color: var(--accent-foreground);
+}
+
+.destructive {
+    background-color: var(--destructive);
+    color: var(--destructive-foreground);
 }

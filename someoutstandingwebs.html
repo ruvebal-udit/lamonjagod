@@ -1,11 +1,17 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="eng">
+    <link rel="icon" type="image/png" href="/assets/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/manifest.json" />
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Przykładowe Strony Internetowe</title>
+    <title>Websites</title>
+   
     <style>
-        body {
+       body {
             font-family: Arial, sans-serif;
             max-width: 1200px;
             margin: 0 auto;
@@ -17,6 +23,15 @@
         .website-description {
             font-size: 1.2em;
             margin-bottom: 20px;
+        }
+        .website-description h2 {
+            margin-bottom: 10px;
+        }
+        .website-description p {
+            margin-bottom: 10px;
+        }
+        .website-description strong {
+            font-weight: bold;
         }
         .screenshots {
             display: flex;
@@ -32,20 +47,39 @@
             border: none;
             border-top: 1px solid #ccc;
         }
+        .website-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #0073e6;
+            text-decoration: none;
+        }
+        .website-link:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Some outstanding webs</h1>
+    </header>
 
     <!-- Sekcja strony 1 -->
     <div class="website-section">
         <div class="website-description">
-            <h2>Strona 1</h2>
-            <p>Opis strony 1. Krótki wstęp o tym, co przedstawia strona internetowa i jej funkcjonalności.</p>
+            <h2>Prometheus Fuels</h2>
+            <p><strong>Description:</strong> The site showcases eco-friendly fuel technology.</p>
+            <p><strong>Aesthetics:</strong> Minimalist design with dark colors reflects the futuristic theme.</p>
+            <p><strong>UX/UI:</strong> Clear layout and smooth animations make navigation easy.</p>
+            <p><strong>Creativity:</strong> Subtle animations and graphics add dynamism without overwhelming.</p>
+            <p><strong>Functionality:</strong> Fast loading and responsive across devices.</p>
+            <p><strong>Conclusion:</strong> The design effectively reflects the brand’s innovative, future-focused mission.</p>
+            <a href="https://prometheusfuels.com" class="website-link" target="_blank">Visit Prometheus Fuels</a>
         </div>
         <div class="screenshots">
-            <img src="screen1-strona1.jpg" alt="Screen 1 - Strona 1">
-            <img src="screen2-strona1.jpg" alt="Screen 2 - Strona 1">
-            <img src="screen3-strona1.jpg" alt="Screen 3 - Strona 1">
+            <img src="screens/fuel1.png" >
+            <img src="screens/fuel2.png" >
+            <img src="screens/fuel3.png" >
         </div>
     </div>
 
@@ -54,13 +88,19 @@
     <!-- Sekcja strony 2 -->
     <div class="website-section">
         <div class="website-description">
-            <h2>Strona 2</h2>
-            <p>Opis strony 2. Krótki wstęp o tym, co przedstawia strona internetowa i jej funkcjonalności.</p>
+            <h2>Falter Inferno – Salon Alpin</h2>
+            <p><strong>Description:</strong> This site uses a creative, interactive format to explore contemporary social, political, and economic problems through an illustrated "journey" inspired by Dante’s "Inferno."</p>
+            <p><strong>Aesthetics:</strong> Bold, dark illustrations create a dramatic and immersive atmosphere.</p>
+            <p><strong>UX/UI:</strong> Engaging navigation simulates a journey through the "layers of hell," each representing a societal issue.</p>
+            <p><strong>Creativity:</strong> Strong use of visual storytelling to convey serious topics.</p>
+            <p><strong>Functionality:</strong> Seamless interaction, enhancing the user experience.</p>
+            <p><strong>Conclusion:</strong> A thought-provoking, visually impactful site that makes complex issues more approachable.</p>
+            <a href="http://falter.wild.plus/#en" class="website-link" target="_blank">Visit Falter Inferno</a>
         </div>
         <div class="screenshots">
-            <img src="screen1-strona2.jpg" alt="Screen 1 - Strona 2">
-            <img src="screen2-strona2.jpg" alt="Screen 2 - Strona 2">
-            <img src="screen3-strona2.jpg" alt="Screen 3 - Strona 2">
+            <img src="screens/hell1.png">
+            <img src="screens/hell2.png">
+            <img src="screens/hell3.png">
         </div>
     </div>
 
@@ -69,13 +109,19 @@
     <!-- Sekcja strony 3 -->
     <div class="website-section">
         <div class="website-description">
-            <h2>Strona 3</h2>
-            <p>Opis strony 3. Krótki wstęp o tym, co przedstawia strona internetowa i jej funkcjonalności.</p>
+            <h2>Dubai Always</h2>
+            <p><strong>Description:</strong> Dubai Always is a gamified website that lets users explore Dubai through an interactive quiz, rewarding them for their knowledge of the city.</p>
+            <p><strong>Aesthetics:</strong> Playful and vibrant design encourages exploration.</p>
+            <p><strong>UX/UI:</strong> Easy navigation with interactive elements that guide the user through the quiz.</p>
+            <p><strong>Creativity:</strong> Combines education and entertainment through a quiz format.</p>
+            <p><strong>Functionality:</strong> Fast loading, responsive design for smooth play on all devices.</p>
+            <p><strong>Conclusion:</strong> A fun, engaging way to learn about Dubai’s attractions.</p>
+            <a href="https://dubaialways.ae/en/game" class="website-link" target="_blank">Visit Dubai Always</a>
         </div>
         <div class="screenshots">
-            <img src="screen1-strona3.jpg" alt="Screen 1 - Strona 3">
-            <img src="screen2-strona3.jpg" alt="Screen 2 - Strona 3">
-            <img src="screen3-strona3.jpg" alt="Screen 3 - Strona 3">
+            <img src="screens/dubai1.png" >
+            <img src="screens/dubai2.png" >
+            <img src="screens/dubai3.png" >
         </div>
     </div>
 
@@ -84,13 +130,19 @@
     <!-- Sekcja strony 4 -->
     <div class="website-section">
         <div class="website-description">
-            <h2>Strona 4</h2>
-            <p>Opis strony 4. Krótki wstęp o tym, co przedstawia strona internetowa i jej funkcjonalności.</p>
+            <h2>NOOMO XR</h2>
+            <p><strong>Description:</strong> NOOMO XR offers a digital experience that immerses users in augmented and virtual reality, showcasing cutting-edge digital environments.</p>
+            <p><strong>Aesthetics:</strong> Futuristic 3D visuals create an immersive and engaging atmosphere.</p>
+            <p><strong>UX/UI:</strong> Seamless transitions between VR/AR experiences keep users engaged.</p>
+            <p><strong>Creativity:</strong> Innovative use of VR/AR technology to present digital content in an interactive way.</p>
+            <p><strong>Functionality:</strong> The site performs smoothly across platforms, providing a fully immersive experience.</p>
+            <p><strong>Conclusion:</strong> A leading-edge site that utilizes XR technology for an engaging, immersive experience.</p>
+            <a href="https://xr.noomoagency.com" class="website-link" target="_blank">Visit NOOMO XR</a>
         </div>
         <div class="screenshots">
-            <img src="screen1-strona4.jpg" alt="Screen 1 - Strona 4">
-            <img src="screen2-strona4.jpg" alt="Screen 2 - Strona 4">
-            <img src="screen3-strona4.jpg" alt="Screen 3 - Strona 4">
+            <img src="screens/noomo1.png" >
+            <img src="screens/noomo2.png" >
+            <img src="screens/noomo3.png" >
         </div>
     </div>
 
