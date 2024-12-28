@@ -6,6 +6,7 @@
 
 ## Mark up
 - Basic non-semantic structure
+- Some mark up erros, some critical as:  Start tag head seen but an element of the same type was already open.
   
 
 ## Content
